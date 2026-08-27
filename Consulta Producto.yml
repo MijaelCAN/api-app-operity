@@ -1,0 +1,22 @@
+info:
+  name: Consulta Producto
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{baseUrl}}Laboratorio/muestras/consultaProducto?numOf=260013108&type=MEZCLA"
+  params:
+    - name: numOf
+      value: "260013108"
+      type: query
+    - name: type
+      value: MEZCLA
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,19 @@
+info:
+  name: Cons. Prod Old
+  type: http
+  seq: 9
+
+http:
+  method: GET
+  url: "{{baseUrl}}ControlTemperatura/ConsultaOT?Barra=260012750"
+  params:
+    - name: Barra
+      value: "260012750"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

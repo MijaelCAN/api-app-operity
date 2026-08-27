@@ -1,0 +1,24 @@
+info:
+  name: Finalizar Analisis
+  type: http
+  seq: 10
+
+http:
+  method: PATCH
+  url: "{{baseUrl}}Laboratorio/muestras/{{docEntry}}/finalizar-analisis"
+  body:
+    type: json
+    data: |-
+      {
+        "status": "APROBADO",
+        "userEndAnalysis": "waragon",
+        "isCorrection": true,
+        "isReprocess": false
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

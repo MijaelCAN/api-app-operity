@@ -1,0 +1,10 @@
+name: prod-interno
+variables:
+  - name: baseUrl
+    value: http://192.168.254.27:8036/api/
+  - name: FechaInicio
+    value: "20260610"
+  - name: fechaFin
+    value: "2260624"
+  - name: docEntry
+    value: "123456"

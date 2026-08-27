@@ -1,0 +1,25 @@
+info:
+  name: Registro Producto
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{baseUrl}}Laboratorio/muestras"
+  body:
+    type: json
+    data: |-
+      {
+        "numOf": "185176",
+        "numEn": "185176",
+        "type": "ENVASADO_FIN",
+        "dateRegister": "2026-06-29T14:24:00",
+        "userRegister": "mcano"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

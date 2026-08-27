@@ -1,0 +1,21 @@
+info:
+  name: Iniciar Analisis
+  type: http
+  seq: 8
+
+http:
+  method: PATCH
+  url: "{{baseUrl}}Laboratorio/muestras/{{docEntry}}/iniciar-analisis"
+  body:
+    type: json
+    data: |-
+      {
+        "userStartAnalysis": "waragon"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

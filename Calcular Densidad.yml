@@ -1,0 +1,22 @@
+info:
+  name: Calcular Densidad
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: "{{baseUrl}}Laboratorio/CalculoDensidad"
+  body:
+    type: json
+    data: |-
+      {
+        "docNum":"260013055",
+        "densidad":"1.1"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

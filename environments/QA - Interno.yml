@@ -1,0 +1,10 @@
+name: QA - Interno
+variables:
+  - name: baseUrl
+    value: http://192.168.254.27:8036/test/api/
+  - name: FechaInicio
+    value: "20260719"
+  - name: fechaFin
+    value: "20260721"
+  - name: docEntry
+    value: d4d1d4cb5c2f4cd5aded025ecb0a1548
