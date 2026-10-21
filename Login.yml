@@ -1,0 +1,23 @@
+info:
+  name: Login
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: "{{baseUrl}}Auth"
+  body:
+    type: json
+    data: |-
+      {
+        "User":"70131373",
+        "PassWord":"70131373"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

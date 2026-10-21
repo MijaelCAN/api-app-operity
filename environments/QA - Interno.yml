@@ -3,8 +3,8 @@ variables:
   - name: baseUrl
     value: http://192.168.254.27:8036/test/api/
   - name: FechaInicio
-    value: "20260719"
+    value: "20260901"
   - name: fechaFin
-    value: "20260721"
+    value: "20260928"
   - name: docEntry
-    value: d4d1d4cb5c2f4cd5aded025ecb0a1548
+    value: 79351594a18e4b4f9eca0720d88a4c1d
